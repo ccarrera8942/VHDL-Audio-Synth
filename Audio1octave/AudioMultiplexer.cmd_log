@@ -1,0 +1,3 @@
+vhdtdtfi -prj Audio1octave -o C:/Users/Student/Desktop/2014DEC03/Audio1octave/AudioMultiplexer.vhi -module AudioMultiplexer -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work AudioMultiplexer.vhd 
+vhdtdtfi -prj Audio1octave -o C:/Users/Student/Desktop/2014DEC03/Audio1octave/AudioMultiplexer.vhi -module AudioMultiplexer -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work AudioMultiplexer.vhd 
+vhdtdtfi -prj Audio1octave -o C:/Users/Student/Desktop/2014DEC03/Audio1octave/AudioMultiplexer.vhi -module AudioMultiplexer -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work AudioMultiplexer.vhd 

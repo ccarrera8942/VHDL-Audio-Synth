@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Student\Desktop\2014DEC03\Audio1octave\AudioMain.ncd
+OUTFILE=C:\Users\Student\Desktop\2014DEC03\Audio1octave\AudioMain.bit
+FAMILY=Spartan3E
+PART=xc3s250e-5vq100
+WORKINGDIR=C:\Users\Student\Desktop\2014DEC03\Audio1octave
+LICENSE=WebPack
+USER_INFO=210683381_0_0_114

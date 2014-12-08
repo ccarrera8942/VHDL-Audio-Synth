@@ -1,0 +1,495 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.31 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.31 secs
+ 
+--> Reading design: AudioMain.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "AudioMain.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "AudioMain"
+Output Format                      : NGC
+Target Device                      : xc3s250e-5-vq100
+
+---- Source Options
+Top Module Name                    : AudioMain
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Student/Desktop/2014DEC03/Audio1octave/ipcore_dir/counter30.vhd" in Library work.
+Architecture counter30_a of Entity counter30 is up to date.
+Compiling vhdl file "C:/Users/Student/Desktop/2014DEC03/Audio1octave/AudioMultiplexer.vhd" in Library work.
+Architecture behavioral of Entity audiomultiplexer is up to date.
+Compiling vhdl file "C:/Users/Student/Desktop/2014DEC03/Audio1octave/dac8.vhd" in Library work.
+Architecture behavioral of Entity dac8 is up to date.
+Compiling vhdl file "C:/Users/Student/Desktop/2014DEC03/Audio1octave/ipcore_dir/Agenerator.vhd" in Library work.
+Architecture agenerator_a of Entity agenerator is up to date.
+Compiling vhdl file "C:/Users/Student/Desktop/2014DEC03/Audio1octave/ipcore_dir/Bgenerator.vhd" in Library work.
+Architecture bgenerator_a of Entity bgenerator is up to date.
+Compiling vhdl file "C:/Users/Student/Desktop/2014DEC03/Audio1octave/ipcore_dir/Cgenerator.vhd" in Library work.
+Architecture cgenerator_a of Entity cgenerator is up to date.
+Compiling vhdl file "C:/Users/Student/Desktop/2014DEC03/Audio1octave/ipcore_dir/Dgenerator.vhd" in Library work.
+Architecture dgenerator_a of Entity dgenerator is up to date.
+Compiling vhdl file "C:/Users/Student/Desktop/2014DEC03/Audio1octave/ipcore_dir/Egenerator.vhd" in Library work.
+Architecture egenerator_a of Entity egenerator is up to date.
+Compiling vhdl file "C:/Users/Student/Desktop/2014DEC03/Audio1octave/ipcore_dir/Fgenerator.vhd" in Library work.
+Architecture fgenerator_a of Entity fgenerator is up to date.
+Compiling vhdl file "C:/Users/Student/Desktop/2014DEC03/Audio1octave/ipcore_dir/Ggenerator.vhd" in Library work.
+Architecture ggenerator_a of Entity ggenerator is up to date.
+Compiling vhdl file "C:/Users/Student/Desktop/2014DEC03/Audio1octave/ipcore_dir/Ahighgenerator.vhd" in Library work.
+Architecture ahighgenerator_a of Entity ahighgenerator is up to date.
+Compiling vhdl file "C:/Users/Student/Desktop/2014DEC03/Audio1octave/AudioMain.vhd" in Library work.
+Entity <audiomain> compiled.
+Entity <audiomain> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <AudioMain> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <AudioMultiplexer> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <dac8> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <AudioMain> in library <work> (Architecture <behavioral>).
+WARNING:Xst:2211 - "C:/Users/Student/Desktop/2014DEC03/Audio1octave/AudioMain.vhd" line 140: Instantiating black box module <counter30>.
+WARNING:Xst:2211 - "C:/Users/Student/Desktop/2014DEC03/Audio1octave/AudioMain.vhd" line 166: Instantiating black box module <Agenerator>.
+WARNING:Xst:2211 - "C:/Users/Student/Desktop/2014DEC03/Audio1octave/AudioMain.vhd" line 173: Instantiating black box module <Bgenerator>.
+WARNING:Xst:2211 - "C:/Users/Student/Desktop/2014DEC03/Audio1octave/AudioMain.vhd" line 180: Instantiating black box module <Cgenerator>.
+WARNING:Xst:2211 - "C:/Users/Student/Desktop/2014DEC03/Audio1octave/AudioMain.vhd" line 187: Instantiating black box module <Dgenerator>.
+WARNING:Xst:2211 - "C:/Users/Student/Desktop/2014DEC03/Audio1octave/AudioMain.vhd" line 194: Instantiating black box module <Egenerator>.
+WARNING:Xst:2211 - "C:/Users/Student/Desktop/2014DEC03/Audio1octave/AudioMain.vhd" line 201: Instantiating black box module <Fgenerator>.
+WARNING:Xst:2211 - "C:/Users/Student/Desktop/2014DEC03/Audio1octave/AudioMain.vhd" line 208: Instantiating black box module <Ggenerator>.
+WARNING:Xst:2211 - "C:/Users/Student/Desktop/2014DEC03/Audio1octave/AudioMain.vhd" line 215: Instantiating black box module <Ahighgenerator>.
+Entity <AudioMain> analyzed. Unit <AudioMain> generated.
+
+Analyzing Entity <AudioMultiplexer> in library <work> (Architecture <behavioral>).
+Entity <AudioMultiplexer> analyzed. Unit <AudioMultiplexer> generated.
+
+Analyzing Entity <dac8> in library <work> (Architecture <behavioral>).
+Entity <dac8> analyzed. Unit <dac8> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <AudioMultiplexer>.
+    Related source file is "C:/Users/Student/Desktop/2014DEC03/Audio1octave/AudioMultiplexer.vhd".
+    Found 8-bit register for signal <dout>.
+    Found 30-bit up counter for signal <count>.
+    Found 8-bit 8-to-1 multiplexer for signal <dout$mux0001> created at line 124.
+    Found 3-bit up counter for signal <seconds>.
+    Found 8-bit register for signal <wave1>.
+    Found 8-bit register for signal <wave2>.
+    Found 8-bit register for signal <wave3>.
+    Found 8-bit register for signal <wave4>.
+    Found 8-bit register for signal <wave5>.
+    Found 8-bit register for signal <wave6>.
+    Found 8-bit register for signal <wave7>.
+    Found 8-bit register for signal <wave8>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred  72 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
+Unit <AudioMultiplexer> synthesized.
+
+
+Synthesizing Unit <dac8>.
+    Related source file is "C:/Users/Student/Desktop/2014DEC03/Audio1octave/dac8.vhd".
+    Found 9-bit register for signal <sum>.
+    Found 9-bit adder for signal <sum$add0000> created at line 48.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <dac8> synthesized.
+
+
+Synthesizing Unit <AudioMain>.
+    Related source file is "C:/Users/Student/Desktop/2014DEC03/Audio1octave/AudioMain.vhd".
+WARNING:Xst:646 - Signal <count<29:14>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <count<6:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <AudioMain> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 9-bit adder                                           : 1
+# Counters                                             : 2
+ 3-bit up counter                                      : 1
+ 30-bit up counter                                     : 1
+# Registers                                            : 10
+ 8-bit register                                        : 9
+ 9-bit register                                        : 1
+# Multiplexers                                         : 1
+ 8-bit 8-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/counter30.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <ipcore_dir/Agenerator.ngc>.
+Reading core <ipcore_dir/Bgenerator.ngc>.
+Reading core <ipcore_dir/Cgenerator.ngc>.
+Reading core <ipcore_dir/Dgenerator.ngc>.
+Reading core <ipcore_dir/Egenerator.ngc>.
+Reading core <ipcore_dir/Fgenerator.ngc>.
+Reading core <ipcore_dir/Ggenerator.ngc>.
+Reading core <ipcore_dir/Ahighgenerator.ngc>.
+Loading core <counter30> for timing and area information for instance <counter30bit>.
+Loading core <Agenerator> for timing and area information for instance <A>.
+Loading core <Bgenerator> for timing and area information for instance <B>.
+Loading core <Cgenerator> for timing and area information for instance <C>.
+Loading core <Dgenerator> for timing and area information for instance <D>.
+Loading core <Egenerator> for timing and area information for instance <E>.
+Loading core <Fgenerator> for timing and area information for instance <F>.
+Loading core <Ggenerator> for timing and area information for instance <G>.
+Loading core <Ahighgenerator> for timing and area information for instance <Ahigh>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 9-bit adder                                           : 1
+# Counters                                             : 2
+ 3-bit up counter                                      : 1
+ 30-bit up counter                                     : 1
+# Registers                                            : 81
+ Flip-Flops                                            : 81
+# Multiplexers                                         : 1
+ 8-bit 8-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <AudioMain> ...
+
+Optimizing unit <AudioMultiplexer> ...
+
+Optimizing unit <dac8> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block AudioMain, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 114
+ Flip-Flops                                            : 114
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : AudioMain.ngr
+Top Level Output File Name         : AudioMain
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 10
+
+Cell Usage :
+# BELS                             : 214
+#      GND                         : 9
+#      INV                         : 10
+#      LUT1                        : 29
+#      LUT2                        : 10
+#      LUT3                        : 33
+#      LUT4                        : 7
+#      MUXCY                       : 45
+#      MUXF5                       : 16
+#      MUXF6                       : 8
+#      VCC                         : 9
+#      XORCY                       : 38
+# FlipFlops/Latches                : 114
+#      FD                          : 17
+#      FDE                         : 3
+#      FDR                         : 94
+# RAMS                             : 8
+#      RAMB16_S36_S36              : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 9
+#      IBUF                        : 8
+#      OBUF                        : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s250evq100-5 
+
+ Number of Slices:                       95  out of   2448     3%  
+ Number of Slice Flip Flops:            114  out of   4896     2%  
+ Number of 4 input LUTs:                 89  out of   4896     1%  
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of     66    15%  
+ Number of BRAMs:                         8  out of     12    66%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 152   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 4.595ns (Maximum Frequency: 217.630MHz)
+   Minimum input arrival time before clock: 3.513ns
+   Maximum output required time after clock: 4.040ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 4.595ns (frequency: 217.630MHz)
+  Total number of paths / destination ports: 2344 / 287
+-------------------------------------------------------------------------
+Delay:               4.595ns (Levels of Logic = 24)
+  Source:            sec_inst (FF)
+  Destination:       sec_inst (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: sec_inst to sec_inst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SEC:C->out           15   0.514   1.016  sec_inst (sec_net)
+     SEC:in->out           1   0.612   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.404   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.052   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.051   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.051   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.051   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.051   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.051   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.051   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.051   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.051   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.051   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.051   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.051   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.051   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.051   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.051   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.051   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.051   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.051   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.051   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.051   0.000  sec_inst (sec_net)
+     SEC:in->out           0   0.051   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.699   0.000  sec_inst (sec_net)
+     SEC:in                    0.268          sec_inst
+    ----------------------------------------
+    Total                      4.595ns (3.579ns logic, 1.016ns route)
+                                       (77.9% logic, 22.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              3.513ns (Levels of Logic = 2)
+  Source:            SWITCH<6> (PAD)
+  Destination:       AudioMux/wave7_7 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: SWITCH<6> to AudioMux/wave7_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.106   0.357  SWITCH_6_IBUF (SWITCH_6_IBUF)
+     INV:I->O              8   0.612   0.643  AudioMux/audiosource<6>_inv1_INV_0 (AudioMux/audiosource<6>_inv)
+     FDR:R                     0.795          AudioMux/wave7_0
+    ----------------------------------------
+    Total                      3.513ns (2.513ns logic, 1.000ns route)
+                                       (71.5% logic, 28.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.040ns (Levels of Logic = 1)
+  Source:            Inst_dac8/sum_8 (FF)
+  Destination:       AUDIO (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: Inst_dac8/sum_8 to AUDIO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.514   0.357  Inst_dac8/sum_8 (Inst_dac8/sum_8)
+     OBUF:I->O                 3.169          AUDIO_OBUF (AUDIO)
+    ----------------------------------------
+    Total                      4.040ns (3.683ns logic, 0.357ns route)
+                                       (91.2% logic, 8.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.24 secs
+ 
+--> 
+
+Total memory usage is 280716 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   11 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
